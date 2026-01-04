@@ -31,6 +31,9 @@ int main(){
     Strategy* strat3 = new Strategy();
     strat3->order_qty = 300;
     strat3->PrintOrderQty();
+    // alternative syntax
+    (*strat3).order_qty = 400; 
+    (*strat3).PrintOrderQty();
     delete strat3; // free the allocated memory
     return 0;
 }

@@ -16,9 +16,8 @@ int main() {
     counterFunction(); // Count: 1
     counterFunction(); // Count: 2
     counterFunction(); // Count: 3
-
     cout << "Initial static counter: " << counter << endl; // 0
     incrementCounter();
     incrementCounter();
-    cout << "Static counter after increment: " << counter << endl; // 1
+    cout << "Static counter after increment: " << counter << endl; // 2
 }
