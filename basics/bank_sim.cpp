@@ -84,32 +84,23 @@ class Bank{
 int Bank::totalCustomers = 0; // initialize static member variable
 int main(){
     Bank::showBankInfo();
-    Bank bank1("No-Bank", "Main Branch", "NB0001");
-    cout<<endl;
-    Customer cust1(1001, "Alice", "Savings");
-    cout<<endl;
+    Bank bank1("No-Bank", "Main Branch", "NB0001"); cout<<endl;
+    
+    Customer cust1(1001, "Alice", "Savings"); cout<<endl;
     cust1.setAddress("456 Elm St, Townsville");
-    cust1.setPhoneNumber("9876543210");
-    cout<<endl;
-    cust1.deposit(1500);
-    cout<<endl;
-    cust1.withdraw(500);
-    cout<<endl;
-    cust1.getBalance();
-    cout<<endl;
+    cust1.setPhoneNumber("9876543210"); cout<<endl;
+    cust1.deposit(1500); cout<<endl;
+    cust1.withdraw(500); cout<<endl;
+    cust1.getBalance(); cout<<endl;
     cust1.getAccountDetails("secure123"); // correct password
-    Customer cust2(1002, "Bob", "Checking");
-    cout<<endl;
-    cust2.deposit(2000);
-    cout<<endl;
-    cust2.withdraw(2500); // insufficient funds
-    cout<<endl;
-    cust2.getBalance();
-    cout<<endl;
-    cust2.getAccountDetails("wrongpass"); // incorrect password
-    cout<<endl;
-    Bank::showBankInfo();
-    cout<<endl;
+
+    Customer cust2(1002, "Bob", "Checking"); cout<<endl;
+    cust2.deposit(2000); cout<<endl;
+    cust2.withdraw(2500); // insufficient funds cout<<endl;
+    cust2.getBalance(); cout<<endl;
+    cust2.getAccountDetails("wrongpass"); // incorrect password cout<<endl;
+
+    Bank::showBankInfo(); cout<<endl;
     cout<<"Total Customers in Bank: "<<Bank::getTotalCustomers()<<endl;
     return 0;
 }
