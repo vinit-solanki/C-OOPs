@@ -1,9 +1,7 @@
 # HFT Trading Pipeline Simulation (C++)
-
 This repository contains a low-latency C++ simulation of a typical high-frequency trading execution pipeline.
 ---
 ## Sample Input
-
 ```cpp
 MarketTick ticks[] = {
     {100, 10, true, now_ns()},
@@ -150,6 +148,7 @@ PHASE 5: EXECUTION COMPLETE
 
 </details>
 ---
+
 ## Pipeline
 Market Data → Order Book → Strategy → Risk → Order Send
 
