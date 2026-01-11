@@ -15,7 +15,7 @@ public:
         cout << "Animal makes a sound\n";
     }
 
-    void eat() {
+    virtual void eat() {
         cout << name << " is eating\n";
     }
 
@@ -36,6 +36,9 @@ public:
     void mammalFeature() {
         cout << name << " is warm-blooded\n";
     }
+    void eat() override {
+        cout << name << " the mammal is eating\n";
+    }
 };
 
 class Pet : virtual public Animal {
@@ -46,6 +49,9 @@ public:
 
     void petFeature() {
         cout << name << " is friendly\n";
+    }
+    void eat() override {
+        cout << name << " the pet is eating\n";
     }
 };
 
@@ -60,6 +66,10 @@ public:
 
     void sound() override {
         cout << name << " barks: Woof Woof!\n";
+    }
+
+    void eat() override {
+        cout << name << " the dog is eating\n";
     }
 
     void dogFeature() {
@@ -80,7 +90,7 @@ int main() {
 
     cout << "\n--- Calling methods ---\n";
     d.sound();           // Dog override
-    d.eat();             // Animal (only ONE copy)
+    d.Pet::eat();             // Animal (only ONE copy)
     d.mammalFeature();   // Mammal method
     d.petFeature();      // Pet method
     d.dogFeature();      // Dog method

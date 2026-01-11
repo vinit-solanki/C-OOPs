@@ -1,0 +1,3 @@
+Hello, this is a sample file.
+This file is created using C++ file handling.
+End of file content.

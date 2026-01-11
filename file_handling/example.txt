@@ -1,0 +1,2 @@
+This is a sample text written to the file.
+Writing another line to the file.

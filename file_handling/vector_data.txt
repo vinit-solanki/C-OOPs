@@ -1,0 +1,4 @@
+Original Vector Data:
+23 53 12 3 645 6432 1235 
+Sorted Vector Data:
+3 12 23 53 645 1235 6432 
